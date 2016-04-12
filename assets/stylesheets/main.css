@@ -45,6 +45,11 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 div {
     display: block;
 }
@@ -61,7 +66,7 @@ header {
     height: 62px;
 }
 footer {
-    background: #ddd;
+    background: #f1f1f1;
     width: 100%;
     display: block;
     clear: both;
@@ -69,6 +74,15 @@ footer {
     margin-left: auto;
     padding-top: 5%;
     padding-bottom: 2%;
+}
+footer .hexagone{
+    height: 230px;
+    max-width: 197px;
+    margin: auto;
+    padding: 5em 0 4.5em 0;
+    background: url("../img/hexagon-footer-bg.png") center center no-repeat;
+    background-size: auto 100%;
+    background-origin: padding-box;
 }
 h1, h2, h3, h4, h5, h6 {
     font-weight: lighter;
@@ -112,7 +126,6 @@ header:after {
     line-height: 58px;
     padding: 0 16px;
     padding-right: 17px;
-    box-sizing: border-box;
     position: relative;
     display: block;
 }
@@ -191,25 +204,17 @@ header:after {
     font-size: 18px;
     color: #333;
     clear: both;
-    width: 65%;
     border-top: 1px solid #9e9e9e;
     margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 27px;
-    padding-left: 26px;
+    margin-left: -10px;
+    margin-right: -10px;
 }
 .icon-links {
     margin: 0 auto;
     width: 60%;
 }
-.hex-container {
-    padding: 9%;
-    height: 225px;
-}
 .icon-section {
-    float: left;
     position: relative;
-    width: 33%;
 }
 .icon-section h3 {
     text-align: center;
@@ -217,27 +222,11 @@ header:after {
     line-height: 28px;
     color: #333;
 }
-.hex-container img {
-    margin: 0 auto;
-    display: block;
-}
 .mail {
 }
 .careers {
 }
 .social-media-icons {
-    background: url("../img/hexagon-footer-bg.png") center center no-repeat;
-}
-.social-media-list {
-    margin: 36% 18%;
-}
-.social-media-list li {
-    float: left;
-}
-.social-media-list img {
-    display: inline;
-    float: left;
-    padding: 7px;
 }
 .banner-container { 
     width: 100%;
@@ -245,7 +234,6 @@ header:after {
     margin-top: 60px;
     width: 100%;
     overflow: hidden;
-    box-sizing: border-box;
 }
 .banner-container .banner-section {
     position: absolute;
@@ -256,12 +244,10 @@ header:after {
     background-position: left top, left top;
     background-repeat: repeat-x, repeat;
     text-align: center;
-    box-sizing: border-box;
 }
 .banner-container .banner-section .banner-content {
     display: inline-block;
     margin-top: 12.0%;
-    box-sizing: border-box;
 }
 .banner-container .banner-section h4 {
     opacity: 0.9;
@@ -287,7 +273,6 @@ h4 {
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat no-repeat;
-    box-sizing: border-box;
 }
 @media only screen and (min-width: 768px) {
 .banner-container #banner-img-container {
@@ -298,11 +283,26 @@ h4 {
     font-family: 'Montserrat', sans-serif;
     color: #FFFFFF;
     text-shadow: 0px 2px 4px rgba(0,0,0,0.5);
-    font-size: 44px;
 }
-@media only screen and (max-width: 768px) {
 h1 {
-    font-size: 30px;
+    font-size: 40px;
+}
+
+@media all and (max-device-width: 720px){
+    h1 {
+        font-size: 18px;
+    }
+}
+
+@media all and (max-device-width: 640px){
+    h1 {
+        font-size: 16px;
+    }
+}
+
+@media all and (max-device-width: 320px){
+    h1 {
+        font-size: 12px;
     }
 }
 .green-button {
@@ -310,7 +310,7 @@ h1 {
     font-size: 26px;
     color: #fff;
     position: absolute;
-    top: 46%;
+    top: 70%;
     left: 40%;
     padding: 19px 30px;
     border-radius: 9px;
@@ -331,8 +331,100 @@ h1 {
     font-style: italic;
     margin: 0 auto;
     text-align: center;
-    background: #fff;
+    background: #f1f1f1;
 }
 h2 {
+    font-size: 30px;
     line-height: 51.55px;
-}   
+}
+.homepage article.perspective-container h1 {
+    font-family: "proxima-nova",Helvetica;
+    font-size: 32px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 100;
+}
+.golden-circle {
+    position: relative;
+    height: 337px;
+    width: 288px;
+    margin: 216px auto;
+}
+.golden-circle .what {
+    background: url("../img/what-active.png") no-repeat;
+    height: 337px;
+    width: 288px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.golden-circle .how  {
+    background: url("../img/how.png") no-repeat;
+    height: 214px;
+    width: 179px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.golden-circle .why {
+    background: url("../img/why.png") no-repeat;
+    height: 93px;
+    width: 78px;
+}
+.homepage .services-container {
+    background-color: #f1f1f1;
+    padding-top: 40px;
+    padding-bottom: 108px;
+    border-top: 1px solid #E4E4E4;
+    border-bottom: 1px solid #E4E4E4;
+}
+.homepage article.services-container h1 {
+    font-family: "proxima-nova",Helvetica;
+    font-size: 32px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 100;
+}
+.homepage .services-container .service-item img {
+    display: block;
+    margin: 0 auto;
+    height: 63px;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+}
+.homepage .services-container .service-item {
+    text-align: center;
+}
+.homepage .services-container .service-item h2{
+    text-align: center;
+}
+.homepage .services-container .service-item p {
+    min-height: 75px;
+    text-align: center;
+}
+.homepage .services-container .service-item a {
+    font-size: 18px;
+    color: #d22341;
+}
+.right-arrow {
+    display: inline-block;
+    margin-left: 10px;
+    width: 14px;
+    height: 11px;
+    background: url("../img/arrow-right-red.png") no-repeat;
+    vertical-align: middle;
+}
+.left {
+    float:left; 
+    width:33%;
+    display: block;
+}
+.homepage .services-container .shipping p {
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+    background-color: #f6f6f6;
+}
