@@ -158,7 +158,7 @@ header:after {
 .menu-button img {
     background: #222;
 }
-@media all and (max-width: 1064px) {
+@media (max-width: 999px) {
     .navigation-links,
     .contact-tagline,
     .contact-mail {
@@ -215,6 +215,10 @@ header:after {
 }
 .icon-section {
     position: relative;
+    float: left; 
+    width: 33%;
+    display: block;
+
 }
 .icon-section h3 {
     text-align: center;
@@ -227,6 +231,10 @@ header:after {
 .careers {
 }
 .social-media-icons {
+}
+.social-media-icons .hexagon {
+    text-align: center;
+    display: inline-block;
 }
 .banner-container { 
     width: 100%;
@@ -274,7 +282,7 @@ h4 {
     background-position: center;
     background-repeat: no-repeat no-repeat;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 320px) {
 .banner-container #banner-img-container {
     min-height: 424px;
     }
@@ -380,6 +388,13 @@ h2 {
     border-top: 1px solid #E4E4E4;
     border-bottom: 1px solid #E4E4E4;
 }
+.services {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .homepage article.services-container h1 {
     font-family: "proxima-nova",Helvetica;
     font-size: 32px;
@@ -397,6 +412,14 @@ h2 {
 }
 .homepage .services-container .service-item {
     text-align: center;
+    float: left;
+    width: 33%;
+}
+@media (max-width: 999px) {
+.homepage .services-container .service-item { 
+        float: none;
+        width: auto;
+    }
 }
 .homepage .services-container .service-item h2{
     text-align: center;
@@ -416,11 +439,6 @@ h2 {
     height: 11px;
     background: url("../img/arrow-right-red.png") no-repeat;
     vertical-align: middle;
-}
-.left {
-    float:left; 
-    width:33%;
-    display: block;
 }
 .homepage .services-container .shipping p {
     font-size: 18px;
