@@ -220,6 +220,7 @@ header:after {
     margin: 0 auto;
     margin-left: -10px;
     margin-right: -10px;
+    padding: 20px;
 }
 footer .icon-section {
     position: relative;
@@ -239,6 +240,10 @@ footer .icon-section .heading {
     line-height: 28px;
     color: #333;
     margin-bottom: 20px;
+}
+footer .container .spacer {
+    padding: 20px;
+    overflow: hidden;
 }
 .banner-container { 
     width: 100%;
@@ -288,7 +293,7 @@ h4 {
 }
 @media only screen and (min-width: 320px) {
 .banner-container #banner-img-container {
-    min-height: 424px;
+    min-height: 524px;
     }
 }
 .banner-container .banner-section h1 {
@@ -345,7 +350,6 @@ h1 {
 }
 .homepage article.portfolio-container h2 {
     font-family: "proxima-nova",Helvetica;
-    font-size: 25px;
     font-style: italic;
     margin: 0 auto;
     text-align: center;
@@ -431,8 +435,8 @@ h2 {
     border-bottom: 1px solid #E4E4E4;
 }
 .container {
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 60px;
+    margin-left: 60px;
     padding-left: 10px;
     padding-right: 10px;
     overflow: hidden;
