@@ -95,11 +95,24 @@ footer .icon-section .hexagone img {
     object-fit: cover;
     overflow: hidden;
 }
-.social-media-icons .hexagone img {
-    text-align: center;
-    display: inline-block;
+footer .hexagone2 { 
+    height: 227px;
+    max-width: 197px;
+    margin: auto;
+    padding: 5em 0 4.5em 0;
+    background: url("../img/hexagon-footer-bg.png") no-repeat, center center;
+    background-size: auto 100%;
+    background-origin: padding-box;
+}
+footer .social-media-icons .media  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .social-media-icons .media ul li{
+    display: inline;
+    width: 3em;
     float: left;
-    width: 33.33%;
 }
 header:after {
     clear: both;
