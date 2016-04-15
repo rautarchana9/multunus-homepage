@@ -103,11 +103,10 @@ footer .hexagone2 {
     background: url("../img/hexagon-footer-bg.png") no-repeat, center center;
     background-size: auto 100%;
     background-origin: padding-box;
+    text-align: center;
 }
 footer .social-media-icons .media  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display:inline-block;
 }
 footer .social-media-icons .media ul li{
     display: inline;
@@ -430,8 +429,8 @@ h2 {
     border-bottom: 1px solid #E4E4E4;
 }
 .container {
-    margin-right: 80px;
-    margin-left: 80px;
+    margin-right: 65px;
+    margin-left: 65px;
     padding-left: 10px;
     padding-right: 10px;
     overflow: hidden;
